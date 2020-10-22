@@ -4,5 +4,9 @@
 
   <button>Generate Cover Letter!</button>
 </form>
-
+<textarea cols="50" rows ="30">
+{% for bulletpoint in bulletpoints%}
+{{bulletpoint }}
+{% endfor %}
+</textarea>
 {% endblock %}
