@@ -1,5 +1,5 @@
 import os
-
+from get_bulletpoints import get_bulletpoints
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -11,8 +11,9 @@ FULL_NAME = {
 
 @app.route("/cover_letter", methods=["POST", "GET"])
 def show_cover_letter():
+    bulletpoints = get_bulletpoints("bulletpoints.txt")
 
-    return render_template("cover_letter.html", name=FULL_NAME)
+    return render_template("cover_letter.html", name=FULL_NAME, bulletpoints=bulletpoints)
 
 
 @app.route("/")
