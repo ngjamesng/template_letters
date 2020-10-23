@@ -15,6 +15,7 @@ def show_cover_letter():
     if form.validate_on_submit():
         greeting = form.greeting.data
         intro = form.intro.data
+        interest_reason = form.interest_reason.data
         outro = form.outro.data
         company_name = form.company_name.data
         bulletpoints = get_bulletpoints("text_files/bulletpoints.txt")
@@ -22,6 +23,7 @@ def show_cover_letter():
                                greeting=greeting,
                                name=FULL_NAME,
                                intro=intro,
+                               interest_reason=interest_reason,
                                company_name=company_name,
                                bulletpoints=bulletpoints,
                                outro=outro
