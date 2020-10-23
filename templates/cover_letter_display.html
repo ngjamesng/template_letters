@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %} 
+<textarea cols="80" rows ="30">
+{{ greeting }}
+
+{{ intro }} I would like to mention a couple of my highlights:
+{% for bulletpoint in bulletpoints %}
+{{bulletpoint }}
+{% endfor %}
+If you've made it this far, I want to thank you for reading about me! Perhaps {{ company_name}} can be a part of my story in the future! {{ outro }}
+</textarea>
+{% endblock %}
