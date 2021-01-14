@@ -28,7 +28,6 @@ SECRET_KEY="hackerz"
 
 Then, go to `localhost:5000` in your web browser to see the template form. Feel free to edit bulletpoints.txt to customize it to your needs. 
 
-In `bulletpoints.txt`, The string `SPLIT_HERE` is used to make a new paragraph. 
-
 In `defaults.py`, feel free to change the default `greeting`, `intro`, and `outtro`.
 
+In `bulletpoints.txt`, The string `SPLIT_HERE` is used to make a new paragraph. 
